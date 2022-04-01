@@ -22,13 +22,10 @@
 
 
 body {
-  webkit-animation: spin 5s linear infinite;
+
   font-family: "Noto Sans";
-  text-align: center;
-  text-decoration: underline;
-  font-size: 32px;
-  font-family: monospace;
-  letter-spacing: 5px;
+
+
   animation: colorRotate 6s linear 0s infinite, spin 5s linear infinite;
 }
 
