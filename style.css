@@ -29,6 +29,14 @@ body {
   animation: colorRotate 6s linear 0s infinite, spin 5s linear infinite;
 }
 
+a {
+
+  font-family: "Noto Sans";
+
+
+  animation: colorRotate 6s linear 0s infinite, spin 5s linear infinite;
+}
+
 @keyframes colorRotate {
   from {
     color: #6666ff;
