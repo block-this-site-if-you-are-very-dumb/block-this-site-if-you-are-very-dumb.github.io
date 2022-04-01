@@ -21,7 +21,7 @@
 }
 
 
-body {
+body :not(.blink_me){
 
   font-family: "Noto Sans";
 
@@ -37,12 +37,17 @@ a {
   animation: colorRotate 2s linear 0s infinite, spin 2s linear infinite;
 }
 .blink_me {
-  animation: blinker 1s linear infinite;
+  font-size:100px;
+  animation: blinker 0.1s linear infinite;
+  transform: translateX(25%); translateY(80%);
+
 }
 
 @keyframes blinker {
+  from {color:red;}
   50% {
     opacity: 0;
+    color:green;
   }
 }
 @keyframes colorRotate {
