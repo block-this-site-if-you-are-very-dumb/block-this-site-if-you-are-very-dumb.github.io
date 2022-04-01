@@ -26,7 +26,7 @@ body {
   font-family: "Noto Sans";
 
 
-  animation: colorRotate 6s linear 0s infinite, spin 5s linear infinite;
+  animation: colorRotate 2s linear 0s infinite, spin 2s linear infinite;
 }
 
 a {
@@ -34,24 +34,37 @@ a {
   font-family: "Noto Sans";
 
 
-  animation: colorRotate 6s linear 0s infinite, spin 5s linear infinite;
+  animation: colorRotate 2s linear 0s infinite, spin 2s linear infinite;
+}
+.blink_me {
+  animation: blinker 1s linear infinite;
 }
 
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 @keyframes colorRotate {
   from {
     color: #6666ff;
+    transform:rotate(0deg);
   }
-  10% {
+  25% {
     color: #0099ff;
+    transform:rotate(90deg);
   }
   50% {
     color: #00ff00;
+    transform:rotate(180deg);
   }
   75% {
     color: #ff3399;
+    transform:rotate(270deg);
   }
   100% {
     color: #6666ff;
+    transform:rotate(360deg);
   }
 }
 button {
@@ -59,3 +72,4 @@ button {
   color: #e8e6e3;
   background-color: #181a1b;
 }
+
